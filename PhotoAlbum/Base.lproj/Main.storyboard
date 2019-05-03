@@ -13,7 +13,7 @@
         <!--Collector-->
         <scene sceneID="GBF-zV-OVG">
             <objects>
-                <tableViewController id="uJI-kL-6ec" sceneMemberID="viewController">
+                <tableViewController id="uJI-kL-6ec" customClass="CollectableTableViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" id="1ym-gv-TIG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="782" y="48"/>
         </scene>
-        <!--Title-->
+        <!--Create COllectable-->
         <scene sceneID="MEG-cW-Wwr">
             <objects>
-                <viewController id="u6c-78-7ey" sceneMemberID="viewController">
+                <viewController id="u6c-78-7ey" customClass="CreateCollectableViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCS-HJ-iI7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="AddImage:" destination="u6c-78-7ey" eventType="touchUpInside" id="aHK-Be-Ocf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,13 +96,25 @@
                         <viewLayoutGuide key="safeArea" id="fl9-dt-z4Q"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="6Ud-S6-DQp">
+                    <navigationItem key="navigationItem" title="Create COllectable" id="6Ud-S6-DQp" userLabel="Create Collectable">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="yAO-8P-JGZ"/>
-                            <barButtonItem systemItem="organize" id="Icy-Dz-6Dr"/>
+                            <barButtonItem systemItem="camera" id="yAO-8P-JGZ">
+                                <connections>
+                                    <action selector="addFromCamera:" destination="u6c-78-7ey" id="f9z-Qc-aBH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="Icy-Dz-6Dr">
+                                <connections>
+                                    <action selector="addFromFolder:" destination="u6c-78-7ey" id="4uB-v8-uoz"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="jOO-dY-jfm" id="4Ss-hf-69p"/>
+                        <outlet property="titleTextField" destination="ze0-hE-5It" id="PFz-LC-FYy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPr-Qx-qdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
