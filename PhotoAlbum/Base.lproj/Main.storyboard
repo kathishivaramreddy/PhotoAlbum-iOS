@@ -56,7 +56,6 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-dY-jfm">
                                 <rect key="frame" x="50" y="118" width="314" height="314"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jOO-dY-jfm" secondAttribute="height" multiplier="1:1" id="NR2-lr-9TQ"/>
                                 </constraints>
@@ -124,6 +123,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="addImage" width="225" height="225"/>
+        <image name="addImage" width="1024" height="1024"/>
     </resources>
 </document>
