@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="782" y="48"/>
         </scene>
-        <!--Create COllectable-->
+        <!--Create Collectable-->
         <scene sceneID="MEG-cW-Wwr">
             <objects>
                 <viewController id="u6c-78-7ey" customClass="CreateCollectableViewController" customModule="PhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,21 +54,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-dY-jfm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addImage" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-dY-jfm">
                                 <rect key="frame" x="50" y="118" width="314" height="314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jOO-dY-jfm" secondAttribute="height" multiplier="1:1" id="NR2-lr-9TQ"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-hE-5It">
-                                <rect key="frame" x="50" y="453" width="314" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-hE-5It">
+                                <rect key="frame" x="50" y="453" width="314" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5T-Vb-stw">
-                                <rect key="frame" x="172" y="511" width="70" height="30"/>
+                                <rect key="frame" x="172" y="516" width="70" height="25"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="ijf-8V-8c0"/>
@@ -96,7 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="fl9-dt-z4Q"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Create COllectable" id="6Ud-S6-DQp" userLabel="Create Collectable">
+                    <navigationItem key="navigationItem" title="Create Collectable" id="6Ud-S6-DQp" userLabel="Create Collectable">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="yAO-8P-JGZ">
                                 <connections>
