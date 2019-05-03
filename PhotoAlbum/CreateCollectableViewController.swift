@@ -34,7 +34,15 @@ class CreateCollectableViewController: UIViewController, UIImagePickerController
     }
     
     @IBAction func AddImage(_ sender: UIButton) {
-        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            var collectable = Collectable(context: context)
+            if let image = imageView.image , let title = titleTextField.text {
+                collectable.image = imageView.image?.jpegData(compressionQuality: 1.0)
+                collectable.title = title
+            }
+            try? context.save()
+        }
+        navigationController?.popViewController(animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
